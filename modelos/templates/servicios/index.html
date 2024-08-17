@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}CloudSoft - Bienvenido{% endblock %}
+
+{% block content %}
+<divclass="text-center">
+    <h1>Bienvenido a CloudSoft</h1>
+    <p>Explora los diferentes modelos de servicios de computación en la nube:</p>
+    <div class="list-group"><a href="{% url 'modelos_servicio' %}"
+            class="list-group-item list-group-item-action">Modelos de Servicio</a><a href="{% url 'saas' %}"
+            class="list-group-item list-group-item-action">Software como Servicio (SaaS)</a><a href="{% url 'paas' %}"
+            class="list-group-item list-group-item-action">Plataforma como Servicio (PaaS)</a><a href="{% url 'iaas' %}"
+            class="list-group-item list-group-item-action">Infraestructura como Servicio (IaaS)</a></div>
+    </div>
+    {% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}CloudSoft - Modelos de Servicio{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<divclass="text-center">
+    <h1>Modelos de Servicio</h1>
+    <pstyle="text-align: justify;">
+        <pstyle="text-align: justify;">
+            Un <strong>modelo de servicio</strong> en el contexto de la <strong>computación en la nube</strong> se
+            refiere a la forma en que se ofrecen y gestionan los <em>recursos</em> y <em>servicios</em> a los
+            consumidores. Estos modelos definen cómo se accede a los servicios, quién es responsable de la gestión de la
+            <em>infraestructura</em> y qué nivel de <em>control</em> tiene el consumidor sobre los recursos.
+            </p>
+
+            <img src="https://iili.io/dGgveLB.png" alt="Mapa de Servicios"
+                style="display: block; margin-left: auto; margin-block: 50px;margin-right: auto; max-width: 100%;">
+
+
+            <p style="text-align: justify;"><strong>Software como Servicio (SaaS)</strong>: Permite a los consumidores
+                utilizar <em>aplicaciones</em> que se ejecutan en la infraestructura de la nube. Los usuarios acceden a
+                estas aplicaciones a través de <em>internet</em>, y el proveedor se encarga del <em>mantenimiento</em> y
+                <em>soporte</em> de la infraestructura subyacente.
+            </p>
+            <p style="text-align: justify;"><strong>Plataforma como Servicio (PaaS)</strong>: Proporciona a los
+                consumidores la capacidad de desarrollar, ejecutar y gestionar <em>aplicaciones</em> sin tener que
+                preocuparse por la infraestructura subyacente. El proveedor maneja el <em>mantenimiento</em> de la
+                plataforma, mientras que el consumidor tiene <em>control</em> sobre las aplicaciones que despliega.
+            </p>
+            <p style="text-align: justify;"><strong>Infraestructura como Servicio (IaaS)</strong>: Ofrece <em>recursos
+                    de computación</em> fundamentales como <em>servidores</em>, <em>almacenamiento</em> y
+                <em>redes</em>. Los consumidores pueden desplegar y ejecutar <em>software</em>, incluyendo <em>sistemas
+                    operativos</em> y <em>aplicaciones</em>, pero no gestionan la infraestructura subyacente.
+            </p>
+            <p style="text-align: justify;">
+                Existen tres modelos de servicio principales en la <strong>computación en la nube</strong>:
+            </p>
+            <div class="list-group"><a href="{% url 'saas' %}" class="list-group-item list-group-item-action">Software
+                    como
+                    Servicio (SaaS)</a><a href="{% url 'paas' %}"
+                    class="list-group-item list-group-item-action">Plataforma
+                    como
+                    Servicio (PaaS)</a><a href="{% url 'iaas' %}"
+                    class="list-group-item list-group-item-action">Infraestructura
+                    como Servicio (IaaS)</a></div>
+            </div>
+            {% endblock %}
